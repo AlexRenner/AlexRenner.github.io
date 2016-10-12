@@ -1,5 +1,5 @@
 body {
-	width: 920px;
+	width: 940px;
 	font-family: Arial;
 	vertical-align: center;
 	margin: auto;
@@ -42,7 +42,7 @@ a:hover {
 .horizontal-rule {
 	position: relative;
 	display: inline-block;
-	width: 920px;
+	width: 940px;
 }
 
 .hr2 {
@@ -81,11 +81,6 @@ span.active {
 
 .hidden {
 	display: none;
-}
-
-ul.skills {
-	list-style: none;
-	padding-left: 5px;
 }
 
 li {
