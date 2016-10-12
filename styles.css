@@ -1,34 +1,6 @@
 body {
 	font-family: Arial;
-	background-color: tan;
-	line-height: 160%;
-	margin: 0 auto;
-}
-
-.instruments {
-	background-image: url("http://previews.123rf.com/images/svetlanaprikhnenko/svetlanaprikhnenko1302/svetlanaprikhnenko130200082/17746324-seamless-gray-background-with-music-notes-Stock-Vector.jpg");
-	margin: 10px;
-	padding: 6px;
-	font-weight: bold;
-}
-
-#table_head {
-	font-weight: bolder;
-}
-
-#actors {
-	line-height: 120%;
-}
-
-footer {
-	margin: 0 auto;
-	width: 600px;
-	height: 30px;
-	background-color: black;
-	color: white;
-	border-radius: 6px;
-	text-align: center;
-	padding: 4px;
+	padding: 20px;
 }
 
 a:link {
@@ -48,3 +20,7 @@ a:hover {
 		font-size: smaller;
 	}
 } 
+
+.name {
+	line-height: 8px;
+}
