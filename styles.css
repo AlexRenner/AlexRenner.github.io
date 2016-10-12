@@ -1,6 +1,12 @@
 body {
+	width: 900;
 	font-family: Arial;
 	padding: 20px;
+}
+
+hr {
+	background-color: gray;
+	height: 3px;
 }
 
 a:link {
@@ -21,6 +27,30 @@ a:hover {
 	}
 } 
 
+.horizontal-rule {
+	position: relative;
+	display: inline-block;
+	width: 900px;
+	z-index: -1;
+}
+
+#tabs {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
 .name {
 	line-height: 8px;
+}
+
+.tab {
+	margin-right: 10px;
+	padding: 20px;
+	border: 3px solid gray;
+	border-radius: 12px 12px 0px 0px;
+}
+
+span.active {
+	border-bottom-color: white;
+	border-radius: 12px 12px 0px 0px;
 }
