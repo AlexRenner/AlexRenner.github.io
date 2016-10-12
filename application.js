@@ -12,19 +12,24 @@ $(document).ready(function(){
 	// Event listener for changing tab color on hover
 	$(".tab").hover(
 		function(){
-			$(this).css("background-color", "#a0a0a0");
+			$(this).css("background-color", "#07889b");
 			$(this).css("color", "white");
 		},
 		function(){
-			$(this).css("background-color", "#e0e0e0");
-			$(this).css("color", "black");
+			if($(this).hasClass("active") === false){
+				$(this).css("background-color", "#4abdac");
+				$(this).css("color", "black");
+			}
 	});
 	// Event listener for mouse down event
 	$(".tab").mousedown(function(){
-		$(this).css("background-color", "#494949");
+		$(this).css("background-color", "#007849");
 	});
 	// Event listener for mouse up event
 	$(".tab").mouseup(function(){
-		$(this).css("background-color", "#a0a0a0");
+		$(".tab").css("background-color", "#4abdac");
+		$(".tab").css("color", "black");
+		$(this).css("background-color", "#07889b");
+		$(this).css("color", "white");
 	});
 });
