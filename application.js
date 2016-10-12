@@ -25,6 +25,6 @@ $(document).ready(function(){
 	});
 	// Event listener for mouse up event
 	$(".tab").mouseup(function(){
-		$(this).css("background-color", "#e0e0e0");
+		$(this).css("background-color", "#a0a0a0");
 	});
 });
