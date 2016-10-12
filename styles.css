@@ -61,6 +61,7 @@ a:hover {
 	border: 3px solid gray;
 	border-radius: 12px 12px 0px 0px;
 	background-color: #e0e0e0;
+	font-family: "Arial Black", Gadget, sans-serif;
 }
 
 span.active {
