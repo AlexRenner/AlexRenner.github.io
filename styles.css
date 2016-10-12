@@ -1,7 +1,14 @@
 body {
-	width: 900;
+	width: 920px;
 	font-family: Arial;
+	vertical-align: center;
+	margin: auto;
+}
+
+header {
+	background-color: #e0e0e0;
 	padding: 20px;
+	width: 100%;
 }
 
 hr {
@@ -30,17 +37,20 @@ a:hover {
 .horizontal-rule {
 	position: relative;
 	display: inline-block;
-	width: 900px;
+	width: 920px;
+}
+
+.hr2 {
 	z-index: -1;
 }
 
 #tabs {
 	display: inline-block;
-	margin-bottom: 10px;
+	margin: 20px 0px 10px 20px;
 }
 
 .name {
-	line-height: 8px;
+	line-height: 20px;
 }
 
 .tab {
@@ -48,6 +58,7 @@ a:hover {
 	padding: 20px;
 	border: 3px solid gray;
 	border-radius: 12px 12px 0px 0px;
+	background-color: #e0e0e0;
 }
 
 span.active {
@@ -74,4 +85,9 @@ li {
 
 .area-of-study {
 	padding-left: 20px;
+}
+
+.content {
+	width: 900px;
+	margin-left: 20px;
 }
