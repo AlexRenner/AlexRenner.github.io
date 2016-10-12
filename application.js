@@ -3,7 +3,8 @@ $(document).ready(function(){
 	$(".tab").on("click", function(event){
 		console.log($(this)[0].innerText);
 		// Change active tab
-		
+		$(".tab").removeClass("active");
+		$(this).addClass("active");
 		// Remove displayed content
 
 		// Display new content
