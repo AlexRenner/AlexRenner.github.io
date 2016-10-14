@@ -33,6 +33,11 @@ a:hover {
 	color: yellow;
 }
 
+.logo {
+	height: 80px;
+	width: auto;
+}
+
 @media screen and (max-width: 600px) {
 	body {
 		font-size: smaller;
@@ -56,7 +61,13 @@ a:hover {
 }
 
 .name {
-	margin-top: 0px;
+	vertical-align: center;
+	line-height: 0px;
+	display: inline;
+}
+
+.contact-info {
+	margin-top: 5px;
 }
 
 .tab {
