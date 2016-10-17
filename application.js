@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	// Event listener for navigating through tabs and links
-	$(".tab, .link").on("click", function(event){
+	// Event listener for navigating through tabs
+	$(".tab").on("click", function(event){
 		// Change active tab
 		$(".tab").removeClass("active");
 		$(this).addClass("active");
@@ -33,6 +33,16 @@ $(document).ready(function(){
 		$(this).css("color", "white");
 	});
 	// Event listener for menu button
-
-
+	$('#menu-button').on('click', function(){
+		$('.dropdown-content').css("display", "block");
+	});
+	// Event listener for navigating via links in dropdown menu
+	$(".link").on("click", function(event){
+		// Remove displayed content
+		$(".content").addClass("hidden");
+		// Display new content
+		$("body").find("#" + $(this)[0].innerText).removeClass("hidden");
+		// Hide menu
+		$('.dropdown-content').css("display", "none");
+	});
 });
