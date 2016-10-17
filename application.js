@@ -23,7 +23,8 @@ $(document).ready(function(){
 	});
 	// Event listener for mouse down event
 	$(".tab").mousedown(function(){
-		$(this).css("background-color", "#007849");
+		$(this).css("background-color", "#f1f1f1");
+		$(this).css("color", "black");
 	});
 	// Event listener for mouse up event
 	$(".tab").mouseup(function(){

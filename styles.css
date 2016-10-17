@@ -170,7 +170,7 @@ li {
 		color: #d0eae6;
 		background-color: #81a5a0;
 		border-radius: 3px;
-		border: solid 1px gray;
+		border: solid 1px black;
 	}
 
 	.menu-bar {
@@ -178,7 +178,7 @@ li {
     height: 3px;
     margin: 5px;
     vertical-align: center;
-    background-color: gray;
+    background-color: black;
     transition: 0.4s;
 	}
 
