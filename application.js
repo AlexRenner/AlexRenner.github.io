@@ -1,3 +1,7 @@
+function animateMenuButton(bar) {
+    bar.classList.toggle("change");
+}
+
 $(document).ready(function(){
 	// Event listener for navigating through tabs
 	$(".tab").on("click", function(event){
@@ -42,7 +46,7 @@ $(document).ready(function(){
 		};
 	});
 	// Event listener for navigating via links in dropdown menu
-	$(".link").on("click", function(event){
+	$(".link").on("click", function(){
 		// Remove displayed content
 		$(".content").addClass("hidden");
 		// Display new content
@@ -51,7 +55,3 @@ $(document).ready(function(){
 		$('.dropdown-content').css("display", "none");
 	});
 });
-
-function myFunction(bar) {
-    bar.classList.toggle("change");
-}
