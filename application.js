@@ -34,7 +34,11 @@ $(document).ready(function(){
 	});
 	// Event listener for menu button
 	$('#menu-button').on('click', function(){
-		$('.dropdown-content').css("display", "block");
+		if($('.dropdown-content:hidden').length == 0){
+			$('.dropdown-content').css("display", "none");
+		} else {
+			$('.dropdown-content').css("display", "block");
+		};
 	});
 	// Event listener for navigating via links in dropdown menu
 	$(".link").on("click", function(event){

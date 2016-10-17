@@ -196,6 +196,7 @@ li {
 
 	/* Links inside the dropdown */
 	.dropdown-content span {
+			border-top: solid 1px gray;
 	    color: black;
 	    padding: 12px 16px;
 	    text-decoration: none;
