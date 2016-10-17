@@ -41,6 +41,7 @@ $(document).ready(function(){
 	$('#menu-button').on('click', function(){
 		if($('.dropdown-content:hidden').length == 0){
 			$('.dropdown-content').css("display", "none");
+			$('#menu-button').css("background-color", "#81a5a0");
 		} else {
 			$('.dropdown-content').css("display", "block");
 		};
