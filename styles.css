@@ -38,12 +38,6 @@ a:hover {
 	width: auto;
 }
 
-@media screen and (max-width: 600px) {
-	body {
-		font-size: smaller;
-	}
-} 
-
 .horizontal-rule {
 	position: relative;
 	display: inline-block;
@@ -109,4 +103,15 @@ li {
 .content {
 	width: 900px;
 	margin-left: 20px;
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		font-size: smaller;
+		background-color: tan;
+	}
+
+	.tab, .hr2 {
+		display: none;
+	}
 }
