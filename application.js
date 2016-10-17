@@ -51,3 +51,7 @@ $(document).ready(function(){
 		$('.dropdown-content').css("display", "none");
 	});
 });
+
+function myFunction(bar) {
+    bar.classList.toggle("change");
+}

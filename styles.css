@@ -219,4 +219,18 @@ li {
 	.tab, .hr2 {
 		display: none;
 	}
+
+	.change .bar1 {
+	    -webkit-transform: rotate(-45deg) translate(-5.5px, 5.5px) ;
+	    transform: rotate(-45deg) translate(-5.5px, 5.5px) ;
+	}
+
+	.change .bar2 {
+	    opacity: 0;
+	}
+
+	.change .bar3 {
+	    -webkit-transform: rotate(45deg) translate(-5.5px, -5.5px) ;
+	    transform: rotate(45deg) translate(-5.5px, -5.5px) ;
+	}
 }
