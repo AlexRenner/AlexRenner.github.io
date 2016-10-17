@@ -1,6 +1,6 @@
 $(document).ready(function(){
-	// Event listener for navigating through tabs
-	$(".tab").on("click", function(event){
+	// Event listener for navigating through tabs and links
+	$(".tab, .link").on("click", function(event){
 		// Change active tab
 		$(".tab").removeClass("active");
 		$(this).addClass("active");
@@ -32,4 +32,7 @@ $(document).ready(function(){
 		$(this).css("background-color", "#07889b");
 		$(this).css("color", "white");
 	});
+	// Event listener for menu button
+
+
 });
