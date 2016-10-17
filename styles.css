@@ -160,20 +160,30 @@ li {
 		background-color: #81a5a0;
 		height: 50px;
 		width: 100%;
-    		box-shadow: 0px 5px 5px 0px #888888;
+    box-shadow: 0px 5px 5px 0px #888888;
 	}
 
 	#menu-button {
 		margin: 10px;
-		width: 50px;
+		width: 30px;
 		height: 30px;
 		color: #d0eae6;
 		background-color: #81a5a0;
-		border-radius: 4px;
+		border-radius: 3px;
+		border: solid 1px gray;
+	}
+
+	.menu-bar {
+    width: 20px;
+    height: 3px;
+    margin: 5px;
+    vertical-align: center;
+    background-color: gray;
+    transition: 0.4s;
 	}
 
 	#menu-button:hover, #menu-button:focus {
-	 	background-color: gray;
+	 	background-color: #f1f1f1;
 	}
 
 	.dropdown {
