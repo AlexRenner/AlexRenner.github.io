@@ -182,10 +182,6 @@ li {
     transition: 0.4s;
 	}
 
-	#menu-button:hover, #menu-button:focus {
-	 	background-color: #f1f1f1;
-	}
-
 	.dropdown {
 	 	position: relative;
 	 	display: inline-block;
@@ -232,5 +228,10 @@ li {
 	.change .bar3 {
 	    -webkit-transform: rotate(45deg) translate(-5.5px, -5.5px) ;
 	    transform: rotate(45deg) translate(-5.5px, -5.5px) ;
+	}
+
+	.link {
+		font-size: 1.2em;
+		font-weight: 600;
 	}
 }
