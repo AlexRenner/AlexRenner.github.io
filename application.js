@@ -1,6 +1,6 @@
 function animateMenuButton(bar) {
-    bar.classList.toggle("change");
-}
+  bar.classList.toggle("change");
+};
 
 $(document).ready(function(){
 	// Event listener for navigating through tabs
