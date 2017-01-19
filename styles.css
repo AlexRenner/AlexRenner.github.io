@@ -248,7 +248,8 @@ li {
 
 	.position {
 		margin: auto;
-		margin-bottom: 10px;
+		margin-bottom: 0px;
 		width: auto;
+		background: none;
 	}
 }
