@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Alex Renner's Portfolio</title>
+
+	  <!-- Stylesheets -->
+	  <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Lobster+Two'>
+		<link rel="stylesheet" href="./styles.css" type="text/css">
+
+	  <!-- JavaScripts -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+	  <script src="./application.js"></script>
+
+	  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	</head>
+	<body>
+
+		<div id="nav-push"></div>
+
+		<header>
+			<span><img class="logo" src="./images/ARenner_logo.gif" /></span><h1 class="name"> - Design Portfolio</h1>
+
+			<div class="horizontal-rule"><hr></div>
+
+			<p class="contact-info">arenner38@yahoo.com | <a href="https://www.linkedin.com/in/alexander-renner">LinkedIn</a> | <a href="https://github.com/AlexRenner">GitHub</a> | <a href="./index.html">Web Resume</a></p>
+
+		</header>
+
+		<div class="row">
+
+		  <div class="column">
+		    <img src="./images/Matted_Toy.gif" onclick="openModal();currentSlide(1)" class="hover-shadow display-image">
+		  </div>
+
+		  <div class="column">
+		    <img src="./images/Matted_blacktiemartinis.gif" onclick="openModal();currentSlide(2)" class="hover-shadow display-image">
+		  </div>
+
+		  <div class="column">
+		    <img src="./images/Matted_tripleplay.gif" onclick="openModal();currentSlide(3)" class="hover-shadow display-image">
+		  </div>
+
+		  <div class="column">
+		    <img src="./images/Matted_brochure.gif" onclick="openModal();currentSlide(4)" class="hover-shadow display-image">
+		  </div>
+
+		  <div class="column">
+		    <img src="./images/Matted_sedarisposter.gif" onclick="openModal();currentSlide(5)" class="hover-shadow display-image">
+		  </div>
+
+		  <div class="column">
+		    <img src="./images/Matted_mechanicslogo.gif" onclick="openModal();currentSlide(6)" class="hover-shadow display-image">
+		  </div>
+
+		  <div class="column">
+		    <img src="./images/Matted_blueshoeaffair.gif" onclick="openModal();currentSlide(7)" class="hover-shadow display-image">
+		  </div>
+
+		</div>
+
+		<div id="myModal" class="modal">
+		  <span class="close cursor" onclick="closeModal()">&times;</span>
+		  <div class="modal-content">
+
+		    <div class="mySlides">
+		      <div class="numbertext">1 / 7</div>
+		        <img src="./images/Matted_Toy.gif" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">2 / 7</div>
+		        <img src="./images/Matted_blacktiemartinis.gif" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">3 / 7</div>
+		        <img src="./images/Matted_tripleplay.gif" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">4 / 7</div>
+		        <img src="./images/Matted_brochure.gif" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">5 / 7</div>
+		        <img src="./images/Matted_sedarisposter.gif" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">6 / 7</div>
+		        <img src="./images/Matted_mechanicslogo.gif" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		      <div class="numbertext">7 / 7</div>
+		        <img src="./images/Matted_blueshoeaffair.gif" style="width:100%">
+		    </div>
+
+		    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		    <div class="caption-container">
+		      <p id="caption"></p>
+		    </div>
+
+		    <div class="demo-thumbnail">
+		      <img class="demo" src="./images/Matted_Toy.gif" onclick="currentSlide(1)" alt="Gradient Mesh Toy">
+		    </div>
+
+		    <div class="demo-thumbnail">
+		      <img class="demo" src="./images/Matted_blacktiemartinis.gif" onclick="currentSlide(2)" alt="Illustrator Card">
+		    </div>
+
+		    <div class="demo-thumbnail">
+		      <img class="demo" src="./images/Matted_tripleplay.gif" onclick="currentSlide(3)" alt="News Paper Advertisement">
+		    </div>
+
+		    <div class="demo-thumbnail">
+		      <img class="demo" src="./images/Matted_brochure.gif" onclick="currentSlide(4)" alt="Brochure">
+		    </div>
+
+		    <div class="demo-thumbnail">
+		      <img class="demo" src="./images/Matted_sedarisposter.gif" onclick="currentSlide(5)" alt="Sedaris Poster">
+		    </div>
+
+		    <div class="demo-thumbnail">
+		      <img class="demo" src="./images/Matted_mechanicslogo.gif" onclick="currentSlide(6)" alt="Mechanics Logo">
+		    </div>
+
+		    <div class="demo-thumbnail">
+		      <img class="demo" src="./images/Matted_blueshoeaffair.gif" onclick="currentSlide(7)" alt="B.L.S. Logo">
+		    </div>
+
+		  </div>
+		</div>
+	</body>
+</html>
