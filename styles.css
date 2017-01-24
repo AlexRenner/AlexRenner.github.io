@@ -423,4 +423,9 @@ img.hover-shadow {
 	margin-right: 0px;
 	line-height: 100px;
 	}
+
+	.nav-arrows {
+		background-color: gray;
+		opacity: .5;
+	}
 }
