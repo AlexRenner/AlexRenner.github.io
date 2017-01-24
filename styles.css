@@ -401,4 +401,31 @@ img.hover-shadow {
 		width: auto;
 		background: none;
 	}
+
+	/* Styling for Portfolio pieces under media query */
+	.row {
+		margin-left: 80px;
+	}
+
+	.column {
+		float: none;
+		display: block;
+		width: 10%;
+	}
+
+	.modal-content {
+		width: 300px;
+	}
+
+	.demo-thumbnail {
+	width: 100px;
+	height: auto;
+	margin-right: 0px;
+	line-height: 100px;
+	}
+
+	.nav-arrows {
+		background-color: gray;
+		opacity: .5;
+	}
 }
