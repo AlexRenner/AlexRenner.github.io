@@ -270,6 +270,13 @@ img.hover-shadow {
 }
 /* End Lightboxing CSS */
 
+/* visit-counter CSS */
+#visit-counter {
+	margin: auto;
+	position: fixed;
+	bottom: 0px;
+}
+
 @media screen and (max-width: 600px) {
 	body {
 		width: 100%;
@@ -427,5 +434,10 @@ img.hover-shadow {
 	.nav-arrows {
 		background-color: gray;
 		opacity: .5;
+	}
+
+	/* visit-counter CSS */
+	#visit-counter {
+		display: none;
 	}
 }
