@@ -4,16 +4,22 @@
 
 		<title>Alex Renner's Resume</title>
 
-	  	<!-- Stylesheets -->
-	  	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Lobster+Two'>
+  	<!-- Stylesheets -->
+  	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Lobster+Two'>
 		<link rel="stylesheet" href="./styles.css" type="text/css">
 
-	  	<!-- JavaScripts -->
-	  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	  	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-	  	<script src="./application.js"></script>
+		<!-- Bootstrap compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
-	  	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  	<!-- JavaScripts -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  	<script src="./application.js"></script>
+
+		<!-- Bootstrap compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 
 	</head>
 	<body>
@@ -37,227 +43,253 @@
 
 		<div id="nav-push"></div>
 
-		<header>
-			<span><img class="logo" src="./images/ARenner_logo.gif" /></span><h1 class="name"> - Web Developer</h1>
+		<header class="container-fluid background-pine shadow">
+			<div class="container">
+				<div class="col-sm-6">
+					<span><img class="logo" src="./images/ARenner_logo.gif" /></span><h3 class="name"> - Development and Design</h3>
+				</div>
 
-			<div class="horizontal-rule"><hr></div>
-
-			<p class="contact-info">arenner38@yahoo.com | <a href="https://www.linkedin.com/in/alexander-renner">LinkedIn</a> | <a href="https://github.com/AlexRenner">GitHub</a> | <a href="./portfolio.html">Design Portfolio</a></p>
-
+				<div class="col-sm-6">
+					<p class="header-info">arenner38@yahoo.com | <a href="https://www.linkedin.com/in/alexander-renner">LinkedIn</a> | <a href="https://github.com/AlexRenner">GitHub</a> | <a href="./portfolio.html">Design Portfolio</a></p>
+				</div>
+			</div>
 		</header>
 
-			<br><br>
-
-		<div id="tabs">
-			<span class="tab active" id="tab-the-first">Summary</span>
-			<span class="tab">Skills</span>
-			<span class="tab">Projects</span>
-			<span class="tab">Experience</span>
-			<span class="tab">Education</span>
-			<span class="tab">Extracurricular</span>
+		<div>
+			<img class="img-responsive" src="images/hands-people-woman-working.jpg" />
 		</div>
 
-		<div class="horizontal-rule hr2"><hr></div>
+		<div>
+	<!-- 		<div id="tabs">
+				<span class="tab active" id="tab-the-first">Summary</span>
+				<span class="tab">Skills</span>
+				<span class="tab">Projects</span>
+				<span class="tab">Experience</span>
+				<span class="tab">Education</span>
+				<span class="tab">Extracurricular</span>
+			</div> -->
 
-		<div class="content position" id="Summary">
-			<p>I am a versatile developer eager to take on any challenge and explore new technologies. I have a passion for learning that is perfectly suited to the ever-changing tech industry. Sharing ideas and collaboration are ideal for finding and implementing the best solution to any problem.</p>
+			<!-- <div class="horizontal-rule hr2"><hr></div> -->
+			<div class="container-fluid">
+				<div class="container content position" id="Summary">
+					<h2>A bit about me</h2>
+					<p>I am a versatile developer eager to take on any challenge and explore new technologies. I have a passion for learning that is perfectly suited to the ever-changing tech industry. Sharing ideas and collaboration are ideal for finding and implementing the best solution to any problem.</p>
 
-			<p>Some of my past experience includes four years working at <a href="http://www.caterpillar.com/">Caterpillar</a> as a technical illustrator and learning full stack web development in Ruby on Rails at <a href="https://devbootcamp.com/">Dev Bootcamp</a>. Being a full stack developer and spending over four years in graphics allows for a very broad range of experience that gives me knowledge of both programming and design. The best of both worlds!</p>
+					<p>Some of my past experience includes four years working at <a href="http://www.caterpillar.com/">Caterpillar</a> as a technical illustrator and learning full stack web development in Ruby on Rails at <a href="https://devbootcamp.com/">Dev Bootcamp</a>. Being a full stack developer and spending over four years in graphics allows for a very broad range of experience that gives me knowledge of both programming and design. The best of both worlds!</p>
 
-			<p>Formalities and jargon aside, I just enjoy problem solving. Whether the weekly crossword or the latest workplace crisis, I'm your guy!</p>
+					<p>Formalities and jargon aside, I just enjoy problem solving. Whether the weekly crossword or the latest workplace crisis, I'm your guy!</p>
 
-			<p>Thanks for visiting!</p>
+					<p>Thanks for visiting!</p>
 
-			<p>- Alex</p>
+					<p>- Alex</p>
+				</div>
+			</div>
+
+			<div class="container-fluid background-mint">
+				<div class="container content" id="Experience">
+					<div class="position">
+						<h3>Mcomm Group, Inc:</h3>
+						<span class="job-title">Web Developer:</span>
+						<span>  May 2017 - March 2019</span>
+						<ul>
+							<li>Development for Ruby on Rails web applications</li>
+							<li>Updating and supporting plugins and themes for WordPress and Joomla!</li>
+							<li>Creating templates, styling, and modules for HubSpot web development</li>
+						</ul>
+					</div>
+
+					<div class="position">
+						<h3>Dev Bootcamp:</h3>
+						<span class="job-title">Web Developer Student:</span>
+						<span>  March 2016 - October 2016</span>
+						<ul>
+							<li>Course for learning full stack Ruby on Rails web application development</li>
+							<li>Object oriented programming in Ruby and JavaScript</li>
+							<li>Agile work flow and model view control </li>
+						</ul>
+					</div>
+
+					<div class="position">
+						<h3>Caterpillar:</h3>
+						<span class="job-title">Technical Illustrator:</span>
+						<span>  January 2012 - January 2016 </span>
+						<ul>
+							<li>Contracted for parts manual illustrations</li>
+							<li>2D and 3D design and layout</li>
+							<li>New software training and teaching</li>
+						</ul>
+					</div>
+
+					<div class="position">
+						<h3>Two Men and a Truck:</h3>
+						<span class="job-title">Head Mover:</span>
+						<span>  May 2011 - December 2011 </span>
+						<ul>
+							<li>Team management</li>
+							<li>Paperwork handling</li>
+							<li>Heavy lifting</li>
+							<li>Class C licensed driving</li>
+						</ul>
+					</div>
+
+					<div class="position">
+						<h3>Menard's:</h3>
+						<span class="job-title">Hardware/Garden Salesperson:</span>
+						<span>  April 2010 - March 2011 </span>
+						<ul>
+							<li>Customer service and product sales</li>
+							<li>Opening/closing procedures</li>
+							<li>Inventory and stocking</li>
+						</ul>
+					</div>
+
+					<div class="position">
+						<h3>Exsell Publishing:</h3>
+						<span class="job-title">Layout/Design Intern:</span>
+						<span>  December 2008 - July 2009</span>
+						<ul>
+							<li>Advertisement design/layout</li>
+							<li>Client correspondence</li>
+							<li>Publication layout and print</li>
+						</ul>
+					</div>
+
+					<div class="position">
+						<h3>Western Illinois University Union:</h3>
+						<span class="job-title">Night Crew:</span>
+						<span>  August 2007 - December 2009</span>
+						<ul>
+							<li>Event Setup</li>
+							<li>Audio/Video Setup</li>
+						</ul>
+					</div>
+
+					<div class="position">
+						<h3>Northern Tier High Adventure Base:</h3>
+						<span class="job-title">Interpreter:</span>
+						<span>  Summer 2005 </span>
+						<ul>
+							<li>Wilderness navigation</li>
+							<li>First aid and survival training</li>
+							<li>Base camp maintenance</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="container content" id="Skills">
+
+					<div class="position">
+						<h3>Design Skills:</h3>
+						<ul class="skills">
+							<li>Adobe Creative Suite 2-6 (Illustrator, Photoshop, InDesign)</li>
+							<li>Canvas</li>
+							<li>QuarkXPress</li>
+							<li>Creo Parametric and ProE Wildfire</li>
+							<li>Creo Illustrate</li>
+							<li>Visualization Mock-up</li>
+						</ul>
+					</div>
+
+					<div class="position">
+						<h3>Technical Skills:</h3>
+						<ul class="skills">
+							<li>Ruby on Rails, WordPress, HubSpot, Joomla!</li>
+							<li>MySQL, PostgreSQL, ActiveRecord</li>
+							<li>Ruby, PHP, JavaScript, jQuery, AJAX, HTML, CSS</li>
+							<li>Macintosh, Windows Operating Systems, Ubuntu Linux</li>
+							<li>GitHub, Bitbucket, and Git Work-flow</li>
+							<li>RESTful design, Agile Work-flow</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div>
+				<img class="img-responsive" src="images/abstract-business-code-270348.jpg" />
+			</div>
+
+			<div class="container-fluid">
+				<div class="container content" id="Education">
+
+					<div class="position">
+						<h3>Dev Bootcamp:</h3>
+						<span class="job-title">Chicago Campus:</span>
+						<span>  March 2016 - October 2016</span>
+						<p class="area-of-study">Area of Study: Ruby on Rails full stack web development</p>
+					</div>
+
+					<div class="position">
+						<h3>Bachelor of Science:</h3>
+						<span class="job-title">Western Illinois University:</span>
+						<span>  August 2005 - December 2009 </span>
+						<p class="area-of-study">Area of Study: Graphics, Marketing, German</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid background-mint">
+				<div class="container content" id="Extracurricular">
+
+					<div class="position">
+						<h3>Boy Scouts of America:</h3>
+						<p class="job-title">Eagle Scout</p>
+						<p class="area-of-study">Project: Delegated and planned the building of trail stairway</p>
+					</div>
+
+					<div class="position">
+						<h3>Bureau of Cultural Affairs: </h3>
+						<p class="job-title">Director of Advertising</p>
+						<p class="area-of-study">Designing and distributing newspaper advertisements and event posters</p>
+					</div>
+
+					<div class="position">
+						<h3>Theta Xi Fraternity: </h3>
+						<p class="job-title">New Member Educator, Fundraising & Philanthropy Chairman</p>
+						<p class="area-of-study">New member education and scheduling, promoting and managing fund raising and community service events</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="container content" id="Projects">
+
+					<div class="position">			
+						<h3><a href="https://github.com/AlexRenner/strEATspot">strEATspot:</a></h3>
+						<p class="job-title">Web App for Finding Street Vendors With Geolocation</p>
+						<p class="area-of-study">My Contribution: Use of Google Maps and Google Geolocation APIs for locating and mapping users' locations.  Utilizing and reworking Google Maps JavaScript documentation</p>
+						<ul>
+							<li><a href="https://github.com/AlexRenner/strEATspot/blob/master/app/assets/javascripts/map.js">Map functionality</a></li>
+							<li><a href="https://github.com/AlexRenner/strEATspot/blob/master/app/assets/javascripts/ajax.js">Map filter AJAX</a></li>
+						</ul>
+					</div>
+
+					<div class="position">
+						<h3><a href="https://github.com/AlexRenner/DBCProject_tracker">DBC Project Tracker:</a></h3>
+						<p class="job-title">Web App for Organizing and Delegating Final Projects</p>
+						<p class="area-of-study">My Contribution: Back end logic for creating class names, students and projects and organizing them into teams.</p>
+						<ul>
+							<li><a href="https://github.com/AlexRenner/DBCProject_tracker/blob/master/app/controllers/teams_controller.rb">Teams Controller</a></li>
+						</ul>
+					</div>
+
+					<div class="position">
+						<h3>DTN Agriculture API:</h3>
+						<p class="job-title">Web App Displaying Weather and Agricultural Data</p>
+						<p class="area-of-study">My Contribution: Calling several APIs through curl and AJAX for use in displaying agricultural news, weather forecasts including radar, and cash bids of crops and cattle.</p>
+					</div>
+				</div>
+			</div>
+
+			<footer class="container-fluid background-pine">
+				<div class="container">
+					<div class="col-sm-12 center">
+						<p class="contact-info">arenner38@yahoo.com | <a href="https://www.linkedin.com/in/alexander-renner">LinkedIn</a> | <a href="https://github.com/AlexRenner">GitHub</a> | <a href="./portfolio.html">Design Portfolio</a></p>
+					</div>
+				</div>
+			</footer>
 		</div>
-
-		<div class="content hidden" id="Experience">
-			<div class="position">
-				<h3>Mcomm Group, Inc:</h3>
-				<span class="job-title">Web Developer:</span>
-				<span>  May 2017 - March 2019</span>
-				<ul>
-					<li>Development for Ruby on Rails web applications</li>
-					<li>Updating and supporting plugins and themes for WordPress and Joomla!</li>
-					<li>Creating templates, styling, and modules for HubSpot web development</li>
-				</ul>
-			</div>
-
-			<div class="position">
-				<h3>Dev Bootcamp:</h3>
-				<span class="job-title">Web Developer Student:</span>
-				<span>  March 2016 - October 2016</span>
-				<ul>
-					<li>Course for learning full stack Ruby on Rails web application development</li>
-					<li>Object oriented programming in Ruby and JavaScript</li>
-					<li>Agile work flow and model view control </li>
-				</ul>
-			</div>
-
-			<div class="position">
-				<h3>Caterpillar:</h3>
-				<span class="job-title">Technical Illustrator:</span>
-				<span>  January 2012 - January 2016 </span>
-				<ul>
-					<li>Contracted for parts manual illustrations</li>
-					<li>2D and 3D design and layout</li>
-					<li>New software training and teaching</li>
-				</ul>
-			</div>
-
-			<div class="position">
-				<h3>Two Men and a Truck:</h3>
-				<span class="job-title">Head Mover:</span>
-				<span>  May 2011 - December 2011 </span>
-				<ul>
-					<li>Team management</li>
-					<li>Paperwork handling</li>
-					<li>Heavy lifting</li>
-					<li>Class C licensed driving</li>
-				</ul>
-			</div>
-
-			<div class="position">
-				<h3>Menard's:</h3>
-				<span class="job-title">Hardware/Garden Salesperson:</span>
-				<span>  April 2010 - March 2011 </span>
-				<ul>
-					<li>Customer service and product sales</li>
-					<li>Opening/closing procedures</li>
-					<li>Inventory and stocking</li>
-				</ul>
-			</div>
-
-			<div class="position">
-				<h3>Exsell Publishing:</h3>
-				<span class="job-title">Layout/Design Intern:</span>
-				<span>  December 2008 - July 2009</span>
-				<ul>
-					<li>Advertisement design/layout</li>
-					<li>Client correspondence</li>
-					<li>Publication layout and print</li>
-				</ul>
-			</div>
-
-			<div class="position">
-				<h3>Western Illinois University Union:</h3>
-				<span class="job-title">Night Crew:</span>
-				<span>  August 2007 - December 2009</span>
-				<ul>
-					<li>Event Setup</li>
-					<li>Audio/Video Setup</li>
-				</ul>
-			</div>
-
-			<div class="position">
-				<h3>Northern Tier High Adventure Base:</h3>
-				<span class="job-title">Interpreter:</span>
-				<span>  Summer 2005 </span>
-				<ul>
-					<li>Wilderness navigation</li>
-					<li>First aid and survival training</li>
-					<li>Base camp maintenance</li>
-				</ul>
-			</div>
-
-		</div>
-
-		<div class="content hidden" id="Skills">
-
-			<div class="position">
-				<h3>Design Skills:</h3>
-				<ul class="skills">
-					<li>Adobe Creative Suite 2-6 (Illustrator, Photoshop, InDesign)</li>
-					<li>Canvas</li>
-					<li>QuarkXPress</li>
-					<li>Creo Parametric and ProE Wildfire</li>
-					<li>Creo Illustrate</li>
-					<li>Visualization Mock-up</li>
-				</ul>
-			</div>
-
-			<div class="position">
-				<h3>Technical Skills:</h3>
-				<ul class="skills">
-					<li>Ruby on Rails, WordPress, HubSpot, Joomla!</li>
-					<li>MySQL, PostgreSQL, ActiveRecord</li>
-					<li>Ruby, PHP, JavaScript, jQuery, AJAX, HTML, CSS</li>
-					<li>Macintosh, Windows Operating Systems, Ubuntu Linux</li>
-					<li>GitHub, Bitbucket, and Git Work-flow</li>
-					<li>RESTful design, Agile Work-flow</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="content hidden" id="Education">
-
-			<div class="position">
-				<h3>Dev Bootcamp:</h3>
-				<span class="job-title">Chicago Campus:</span>
-				<span>  March 2016 - October 2016</span>
-				<p class="area-of-study">Area of Study: Ruby on Rails full stack web development</p>
-			</div>
-
-			<div class="position">
-				<h3>Bachelor of Science:</h3>
-				<span class="job-title">Western Illinois University:</span>
-				<span>  August 2005 - December 2009 </span>
-				<p class="area-of-study">Area of Study: Graphics, Marketing, German</p>
-			</div>
-
-		</div>
-
-		<div class="content hidden" id="Extracurricular">
-
-			<div class="position">
-				<h3>Boy Scouts of America:</h3>
-				<p class="job-title">Eagle Scout</p>
-				<p class="area-of-study">Project: Delegated and planned the building of trail stairway</p>
-			</div>
-
-			<div class="position">
-				<h3>Bureau of Cultural Affairs: </h3>
-				<p class="job-title">Director of Advertising</p>
-				<p class="area-of-study">Designing and distributing newspaper advertisements and event posters</p>
-			</div>
-
-			<div class="position">
-				<h3>Theta Xi Fraternity: </h3>
-				<p class="job-title">New Member Educator, Fundraising & Philanthropy Chairman</p>
-				<p class="area-of-study">New member education and scheduling, promoting and managing fund raising and community service events</p>
-			</div>
-
-		</div>
-
-		<div class="content hidden" id="Projects">
-
-			<div class="position">			
-				<h3><a href="https://github.com/AlexRenner/strEATspot">strEATspot:</a></h3>
-				<p class="job-title">Web App for Finding Street Vendors With Geolocation</p>
-				<p class="area-of-study">My Contribution: Use of Google Maps and Google Geolocation APIs for locating and mapping users' locations.  Utilizing and reworking Google Maps JavaScript documentation</p>
-				<ul>
-					<li><a href="https://github.com/AlexRenner/strEATspot/blob/master/app/assets/javascripts/map.js">Map functionality</a></li>
-					<li><a href="https://github.com/AlexRenner/strEATspot/blob/master/app/assets/javascripts/ajax.js">Map filter AJAX</a></li>
-				</ul>
-			</div>
-
-			<div class="position">
-				<h3><a href="https://github.com/AlexRenner/DBCProject_tracker">DBC Project Tracker:</a></h3>
-				<p class="job-title">Web App for Organizing and Delegating Final Projects</p>
-				<p class="area-of-study">My Contribution: Back end logic for creating class names, students and projects and organizing them into teams.</p>
-				<ul>
-					<li><a href="https://github.com/AlexRenner/DBCProject_tracker/blob/master/app/controllers/teams_controller.rb">Teams Controller</a></li>
-				</ul>
-			</div>
-
-			<div class="position">
-				<h3>DTN Agriculture API:</h3>
-				<p class="job-title">Web App Displaying Weather and Agricultural Data</p>
-				<p class="area-of-study">My Contribution: Calling several APIs through curl and AJAX for use in displaying agricultural news, weather forecasts including radar, and cash bids of crops and cattle.</p>
-			</div>
-
-		</div>
-
 	</body>
 </html>
 
