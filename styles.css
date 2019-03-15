@@ -581,12 +581,19 @@ i {
 	font-size: 200px;
 }
 
+i.skills-icon {
+	font-size: 100px;
+}
+
 @media screen and (min-width: 992px) {
 	.margin-top50 {
 		margin-top: 50%;
 	}
 	.margin-top16 {
 		margin-top: 16%;
+	}
+	i.skills-icon {
+		margin-top: 22%;
 	}
 }
 
