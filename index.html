@@ -10,6 +10,8 @@
 
 		<!-- Bootstrap compiled and minified CSS -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+		<!-- Twitter Bootstrap Font Awesome -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
   	<!-- JavaScripts -->
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -31,27 +33,51 @@
 				  <div class="menu-bar bar3"></div>
 				</div>
 			  <div id="myDropdown" class="dropdown-content">
-				<span class="link" onclick="animateMenuButton(getElementById('menu-button'))">Summary</span>
-				<span class="link" onclick="animateMenuButton(getElementById('menu-button'))">Skills</span>
-				<span class="link" onclick="animateMenuButton(getElementById('menu-button'))">Projects</span>
-				<span class="link" onclick="animateMenuButton(getElementById('menu-button'))">Experience</span>
-				<span class="link" onclick="animateMenuButton(getElementById('menu-button'))">Education</span>
-				<span class="link" onclick="animateMenuButton(getElementById('menu-button'))">Extracurricular</span>
+				<span class="link"><a class="nav-link" href="#Summary">About Me <span class="sr-only">(current)</span></a></span>
+				<span class="link"><a class="nav-link" href="#Experience">Experience</a></span>
+				<span class="link"><a class="nav-link" href="#Skills">Skills</a></span>
+				<span class="link"><a class="nav-link" href="#Education">Education</a></span>
+				<span class="link"><a class="nav-link" href="#Extracurricular">Extra</a></span>
+				<span class="link"><a class="nav-link" href="#Projects">Projects</a></span>
 			</div>
 		  </div>
 		</div>
 
 		<div id="nav-push"></div>
 
-		<header class="container-fluid background-pine shadow">
+		<header class="container-fluid background-pine bottom-border">
 			<div class="container">
-				<div class="col-sm-6">
+				<div class="col-md-12 col-sm-12 col-xs-12">
 					<span><img class="logo" src="./images/ARenner_logo.gif" /></span><h3 class="name"> - Development and Design</h3>
 				</div>
 
-				<div class="col-sm-6">
-					<p class="header-info">arenner38@yahoo.com | <a href="https://www.linkedin.com/in/alexander-renner">LinkedIn</a> | <a href="https://github.com/AlexRenner">GitHub</a> | <a href="./portfolio.html">Design Portfolio</a></p>
-				</div>
+				<!-- <div class="col-md-12 col-sm-12 col-xs-12 only-600up">
+					<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+					  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					    <ul class="navbar-nav mr-auto">
+					      <li class="nav-item active">
+					        <a class="nav-link" href="#Summary">About Me <span class="sr-only">(current)</span></a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#Experience">Experience</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#Skills">Skills</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#Education">Education</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#Extracurricular">Extra</a>
+					      </li>
+					      <li class="nav-item">
+					        <a class="nav-link" href="#Projects">Projects</a>
+					      </li>
+					    </ul>
+					  </div>
+					</nav>
+				</div> -->
 			</div>
 		</header>
 
@@ -73,15 +99,18 @@
 			<div class="container-fluid">
 				<div class="container content position" id="Summary">
 					<h2>A Bit About Me</h2>
-					<p>I am a versatile developer eager to take on any challenge and explore new technologies. I have a passion for learning that is perfectly suited to the ever-changing tech industry. Sharing ideas and collaboration are ideal for finding and implementing the best solution to any problem.</p>
 
-					<p>Some of my past experience includes four years working at <a href="http://www.caterpillar.com/">Caterpillar</a> as a technical illustrator and learning full stack web development in Ruby on Rails at <a href="https://devbootcamp.com/">Dev Bootcamp</a>. Being a full stack developer and spending over four years in graphics allows for a very broad range of experience that gives me knowledge of both programming and design. The best of both worlds!</p>
+					<div class="col-sm-12">
+						<p>I am a versatile developer and designer eager to take on any challenge and explore new technologies. I have a passion for learning that is perfectly suited to the ever-changing tech industry. Sharing ideas and collaboration are ideal for finding and implementing the best solution to any problem.</p>
 
-					<p>Formalities and jargon aside, I just enjoy problem solving. Whether the weekly crossword or the latest workplace crisis, I'm your guy!</p>
+						<p>Some of my past experience includes four years working at <a href="http://www.caterpillar.com/" target="_blank">Caterpillar</a> as a technical illustrator, learning full stack web development in Ruby on Rails at <a href="https://www.nobledesktop.com/classes/ruby-on-rails-bootcamp" target="_blank">Dev Bootcamp</a>, and working as a developer at <a href="http://www.mcommgroup.com/" target="_blank">Mcomm Group, Inc</a>. Being a full stack developer and spending over four years in graphics allows for a very broad range of experience that gives me knowledge of both programming and design. The best of both worlds!</p>
 
-					<p>Thanks for visiting!</p>
+						<p>Formalities and jargon aside, I just enjoy problem solving. Whether the weekly crossword or the latest workplace crisis, I'm your guy!</p>
 
-					<p>- Alex</p>
+						<p>Thanks for visiting!</p>
+
+						<p>- Alex</p>
+					</div>
 				</div>
 			</div>
 
@@ -89,135 +118,137 @@
 				<div class="container content" id="Experience">
 					<h2>Work Experience</h2>
 
-					<div id="myCarousel" class="carousel slide" data-ride="carousel">
-					  <!-- Indicators -->
-					  <ol class="carousel-indicators">
-					    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					    <li data-target="#myCarousel" data-slide-to="1"></li>
-					    <li data-target="#myCarousel" data-slide-to="2"></li>
-					    <li data-target="#myCarousel" data-slide-to="3"></li>
-					    <li data-target="#myCarousel" data-slide-to="4"></li>
-					    <li data-target="#myCarousel" data-slide-to="5"></li>
-					    <li data-target="#myCarousel" data-slide-to="6"></li>
-					    <li data-target="#myCarousel" data-slide-to="7"></li>
-					  </ol>
+					<div class="col-sm-12">
+						<div id="myCarousel" class="carousel slide" data-ride="carousel">
+						  <!-- Indicators -->
+						  <ol class="carousel-indicators">
+						    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						    <li data-target="#myCarousel" data-slide-to="1"></li>
+						    <li data-target="#myCarousel" data-slide-to="2"></li>
+						    <li data-target="#myCarousel" data-slide-to="3"></li>
+						    <li data-target="#myCarousel" data-slide-to="4"></li>
+						    <li data-target="#myCarousel" data-slide-to="5"></li>
+						    <li data-target="#myCarousel" data-slide-to="6"></li>
+						    <li data-target="#myCarousel" data-slide-to="7"></li>
+						  </ol>
 
-					  <!-- Wrapper for slides -->
-					  <div class="carousel-inner">
-					    <div class="item active">
-								<div class="position">
-									<h3>Mcomm Group, Inc:</h3>
-									<span class="job-title">Web Developer:</span>
-									<span>  May 2017 - March 2019</span>
-									<ul>
-										<li>Development for Ruby on Rails web applications</li>
-										<li>Updating and supporting plugins and themes for WordPress and Joomla!</li>
-										<li>Creating templates, styling, and modules for HubSpot web development</li>
-									</ul>
-								</div>
-					    </div>
+						  <!-- Wrapper for slides -->
+						  <div class="carousel-inner">
+						    <div class="item active">
+									<div class="position">
+										<h3>Mcomm Group, Inc:</h3>
+										<span class="job-title">Web Developer:</span>
+										<span>  May 2017 - March 2019</span>
+										<ul>
+											<li>Development for Ruby on Rails web applications</li>
+											<li>Updating and supporting plugins and themes for WordPress and Joomla!</li>
+											<li>Creating templates, styling, and modules for HubSpot web development</li>
+										</ul>
+									</div>
+						    </div>
 
-					    <div class="item">
-								<div class="position">
-									<h3>Dev Bootcamp:</h3>
-									<span class="job-title">Web Developer Student:</span>
-									<span>  March 2016 - October 2016</span>
-									<ul>
-										<li>Course for learning full stack Ruby on Rails web application development</li>
-										<li>Object oriented programming in Ruby and JavaScript</li>
-										<li>Agile work flow and model view control </li>
-									</ul>
-								</div>
-					    </div>
+						    <div class="item">
+									<div class="position">
+										<h3>Dev Bootcamp:</h3>
+										<span class="job-title">Web Developer Student:</span>
+										<span>  March 2016 - October 2016</span>
+										<ul>
+											<li>Course for learning full stack Ruby on Rails web application development</li>
+											<li>Object oriented programming in Ruby and JavaScript</li>
+											<li>Agile work flow and model view control </li>
+										</ul>
+									</div>
+						    </div>
 
-					    <div class="item">
-								<div class="position">
-									<h3>Caterpillar:</h3>
-									<span class="job-title">Technical Illustrator:</span>
-									<span>  January 2012 - January 2016 </span>
-									<ul>
-										<li>Contracted for parts manual illustrations</li>
-										<li>2D and 3D design and layout</li>
-										<li>New software training and teaching</li>
-									</ul>
-								</div>
-					    </div>
+						    <div class="item">
+									<div class="position">
+										<h3>Caterpillar:</h3>
+										<span class="job-title">Technical Illustrator:</span>
+										<span>  January 2012 - January 2016 </span>
+										<ul>
+											<li>Contracted for parts manual illustrations</li>
+											<li>2D and 3D design and layout</li>
+											<li>New software training and teaching</li>
+										</ul>
+									</div>
+						    </div>
 
-					    <div class="item">
-								<div class="position">
-									<h3>Two Men and a Truck:</h3>
-									<span class="job-title">Head Mover:</span>
-									<span>  May 2011 - December 2011 </span>
-									<ul>
-										<li>Team management</li>
-										<li>Paperwork handling</li>
-										<li>Heavy lifting</li>
-										<li>Class C licensed driving</li>
-									</ul>
-								</div>
-					    </div>
+						    <div class="item">
+									<div class="position">
+										<h3>Two Men and a Truck:</h3>
+										<span class="job-title">Head Mover:</span>
+										<span>  May 2011 - December 2011 </span>
+										<ul>
+											<li>Team management</li>
+											<li>Paperwork handling</li>
+											<li>Heavy lifting</li>
+											<li>Class C licensed driving</li>
+										</ul>
+									</div>
+						    </div>
 
-					    <div class="item">
-								<div class="position">
-									<h3>Menard's:</h3>
-									<span class="job-title">Hardware/Garden Salesperson:</span>
-									<span>  April 2010 - March 2011 </span>
-									<ul>
-										<li>Customer service and product sales</li>
-										<li>Opening/closing procedures</li>
-										<li>Inventory and stocking</li>
-									</ul>
-								</div>
-					    </div>
+						    <div class="item">
+									<div class="position">
+										<h3>Menard's:</h3>
+										<span class="job-title">Hardware/Garden Salesperson:</span>
+										<span>  April 2010 - March 2011 </span>
+										<ul>
+											<li>Customer service and product sales</li>
+											<li>Opening/closing procedures</li>
+											<li>Inventory and stocking</li>
+										</ul>
+									</div>
+						    </div>
 
-					    <div class="item">
-								<div class="position">
-									<h3>Exsell Publishing:</h3>
-									<span class="job-title">Layout/Design Intern:</span>
-									<span>  December 2008 - July 2009</span>
-									<ul>
-										<li>Advertisement design/layout</li>
-										<li>Client correspondence</li>
-										<li>Publication layout and print</li>
-									</ul>
-								</div>
-					    </div>
+						    <div class="item">
+									<div class="position">
+										<h3>Exsell Publishing:</h3>
+										<span class="job-title">Layout/Design Intern:</span>
+										<span>  December 2008 - July 2009</span>
+										<ul>
+											<li>Advertisement design/layout</li>
+											<li>Client correspondence</li>
+											<li>Publication layout and print</li>
+										</ul>
+									</div>
+						    </div>
 
-					    <div class="item">
-								<div class="position">
-									<h3>Western Illinois University Union:</h3>
-									<span class="job-title">Night Crew:</span>
-									<span>  August 2007 - December 2009</span>
-									<ul>
-										<li>Event Setup</li>
-										<li>Audio/Video Setup</li>
-									</ul>
-								</div>
-					    </div>
+						    <div class="item">
+									<div class="position">
+										<h3>Western Illinois University Union:</h3>
+										<span class="job-title">Night Crew:</span>
+										<span>  August 2007 - December 2009</span>
+										<ul>
+											<li>Event Setup</li>
+											<li>Audio/Video Setup</li>
+										</ul>
+									</div>
+						    </div>
 
-					    <div class="item">
-								<div class="position">
-									<h3>Northern Tier High Adventure Base:</h3>
-									<span class="job-title">Interpreter:</span>
-									<span>  Summer 2005 </span>
-									<ul>
-										<li>Wilderness navigation</li>
-										<li>First aid and survival training</li>
-										<li>Base camp maintenance</li>
-									</ul>
-								</div>
-					    </div>
-					  </div>
+						    <div class="item">
+									<div class="position">
+										<h3>Northern Tier High Adventure Base:</h3>
+										<span class="job-title">Interpreter:</span>
+										<span>  Summer 2005 </span>
+										<ul>
+											<li>Wilderness navigation</li>
+											<li>First aid and survival training</li>
+											<li>Base camp maintenance</li>
+										</ul>
+									</div>
+						    </div>
+						  </div>
 
-					  <!-- Left and right controls -->
-					  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-					    <span class="glyphicon glyphicon-chevron-left"></span>
-					    <span class="sr-only">Previous</span>
-					  </a>
-					  <a class="right carousel-control" href="#myCarousel" data-slide="next">
-					    <span class="glyphicon glyphicon-chevron-right"></span>
-					    <span class="sr-only">Next</span>
-					  </a>
+						  <!-- Left and right controls -->
+						  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+						    <span class="glyphicon glyphicon-chevron-left"></span>
+						    <span class="sr-only">Previous</span>
+						  </a>
+						  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+						    <span class="glyphicon glyphicon-chevron-right"></span>
+						    <span class="sr-only">Next</span>
+						  </a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -226,7 +257,15 @@
 				<div class="container content" id="Skills">
 					<h2>What I Can Do</h2>
 
-					<div class="position col-sm-6 slide-in-right">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<br><br>
+					</div>
+
+					<div class="col-md-3 col-sm-12 col-xs-12 center icon-container slide-object invisible">
+						<i class="fas fa-file-pdf color-mint"></i>
+					</div>
+
+					<div class="col-md-9 col-sm-12 col-xs-12 slide-object invisible slide-left">
 						<h3>Design Skills:</h3>
 						<ul class="skills">
 							<li>Adobe Creative Suite 2-6 (Illustrator, Photoshop, InDesign)</li>
@@ -238,13 +277,21 @@
 						</ul>
 					</div>
 
-					<div class="position col-sm-6 slide-in-left">
+					<div class="col-md-12 col-sm-12 col-xs-12">
+						<br><br>
+					</div>
+
+					<div class="col-md-3 col-sm-12 col-xs-12 center icon-container slide-object invisible">
+						<i class="fas fa-file-code color-mint"></i>
+					</div>
+
+					<div class="col-md-9 col-sm-12 col-xs-12 slide-object invisible slide-left">
 						<h3>Technical Skills:</h3>
 						<ul class="skills">
 							<li>Ruby on Rails, WordPress, HubSpot, Joomla!</li>
 							<li>MySQL, PostgreSQL, ActiveRecord</li>
 							<li>Ruby, PHP, JavaScript, jQuery, AJAX, HTML, CSS</li>
-							<li>Macintosh, Windows Operating Systems, Ubuntu Linux</li>
+							<li>Mac OS, Windows OS, Ubuntu Linux</li>
 							<li>GitHub, Bitbucket, and Git Work-flow</li>
 							<li>RESTful design, Agile Work-flow</li>
 						</ul>
@@ -260,18 +307,25 @@
 				<div class="container content" id="Education">
 					<h2>Where I Have Studied</h2>
 
-					<div class="position">
-						<h3>Dev Bootcamp:</h3>
-						<span class="job-title">Chicago Campus:</span>
-						<span>  March 2016 - October 2016</span>
-						<p class="area-of-study">Area of Study: Ruby on Rails full stack web development</p>
+					<div class="col-md-3 col-sm-12 col-xs-12 center icon-container slide-object invisible">
+						<i class="fas fa-graduation-cap color-mint"></i>
 					</div>
 
-					<div class="position">
-						<h3>Bachelor of Science:</h3>
-						<span class="job-title">Western Illinois University:</span>
-						<span>  August 2005 - December 2009 </span>
-						<p class="area-of-study">Area of Study: Graphics, Marketing, German</p>
+					<div class="col-md-9 col-sm-12 col-xs-12 slide-object invisible slide-left">
+
+						<div class="position">
+							<h3>Dev Bootcamp:</h3>
+							<span class="job-title">Chicago Campus:</span>
+							<span>  March 2016 - October 2016</span>
+							<p class="area-of-study">Area of Study: Ruby on Rails full stack web development</p>
+						</div>
+
+						<div class="position slide-object">
+							<h3>Bachelor of Science:</h3>
+							<span class="job-title">Western Illinois University:</span>
+							<span>  August 2005 - December 2009 </span>
+							<p class="area-of-study">Area of Study: Graphics, Marketing, German</p>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -280,22 +334,28 @@
 				<div class="container content" id="Extracurricular">
 					<h2>Groups That Helped Make Me Me</h2>
 
-					<div class="position">
-						<h3>Boy Scouts of America:</h3>
-						<p class="job-title">Eagle Scout</p>
-						<p class="area-of-study">Project: Delegated and planned the building of trail stairway</p>
+					<div class="col-md-9 col-sm-12 col-xs-12 slide-object invisible">
+						<div class="position">
+							<h3>Boy Scouts of America:</h3>
+							<p class="job-title">Eagle Scout</p>
+							<p class="area-of-study">Project: Delegated and planned the building of trail stairway</p>
+						</div>
+
+						<div class="position">
+							<h3>Bureau of Cultural Affairs: </h3>
+							<p class="job-title">Director of Advertising</p>
+							<p class="area-of-study">Designing and distributing newspaper advertisements and event posters</p>
+						</div>
+
+						<div class="position">
+							<h3>Theta Xi Fraternity: </h3>
+							<p class="job-title">New Member Educator, Fundraising & Philanthropy Chairman</p>
+							<p class="area-of-study">New member education and scheduling, promoting and managing fund raising and community service events</p>
+						</div>
 					</div>
 
-					<div class="position">
-						<h3>Bureau of Cultural Affairs: </h3>
-						<p class="job-title">Director of Advertising</p>
-						<p class="area-of-study">Designing and distributing newspaper advertisements and event posters</p>
-					</div>
-
-					<div class="position">
-						<h3>Theta Xi Fraternity: </h3>
-						<p class="job-title">New Member Educator, Fundraising & Philanthropy Chairman</p>
-						<p class="area-of-study">New member education and scheduling, promoting and managing fund raising and community service events</p>
+					<div class="col-md-3 col-sm-12 col-xs-12 center icon-container slide-object invisible slide-left">
+						<i class="fas fa-user color-white margin-top16"></i>
 					</div>
 				</div>
 			</div>
@@ -304,37 +364,45 @@
 				<div class="container content" id="Projects">
 					<h2>Some Of The Work I Have Done</h2>
 
-					<div class="position">			
-						<h3><a href="https://github.com/AlexRenner/strEATspot">strEATspot:</a></h3>
-						<p class="job-title">Web App for Finding Street Vendors With Geolocation</p>
-						<p class="area-of-study">My Contribution: Use of Google Maps and Google Geolocation APIs for locating and mapping users' locations.  Utilizing and reworking Google Maps JavaScript documentation</p>
-						<ul>
-							<li><a href="https://github.com/AlexRenner/strEATspot/blob/master/app/assets/javascripts/map.js">Map functionality</a></li>
-							<li><a href="https://github.com/AlexRenner/strEATspot/blob/master/app/assets/javascripts/ajax.js">Map filter AJAX</a></li>
-						</ul>
+					<div class="col-md-3 col-sm-12 col-xs-12 center icon-container slide-object invisible">
+						<i class="fas fa-folder-open color-mint margin-top50"></i>
 					</div>
 
-					<div class="position">
-						<h3><a href="https://github.com/AlexRenner/DBCProject_tracker">DBC Project Tracker:</a></h3>
-						<p class="job-title">Web App for Organizing and Delegating Final Projects</p>
-						<p class="area-of-study">My Contribution: Back end logic for creating class names, students and projects and organizing them into teams.</p>
-						<ul>
-							<li><a href="https://github.com/AlexRenner/DBCProject_tracker/blob/master/app/controllers/teams_controller.rb">Teams Controller</a></li>
-						</ul>
-					</div>
+					<div class="col-md-9 col-sm-12 col-xs-12 slide-object invisible slide-left">
+						<div class="position">			
+							<h3><a href="https://github.com/AlexRenner/strEATspot">strEATspot:</a></h3>
+							<p class="job-title">Web App for Finding Street Vendors With Geolocation</p>
+							<p class="area-of-study">My Contribution: Use of Google Maps and Google Geolocation APIs for locating and mapping users' locations.  Utilizing and reworking Google Maps JavaScript documentation</p>
+							<ul>
+								<li><a href="https://github.com/AlexRenner/strEATspot/blob/master/app/assets/javascripts/map.js">Map functionality</a></li>
+								<li><a href="https://github.com/AlexRenner/strEATspot/blob/master/app/assets/javascripts/ajax.js">Map filter AJAX</a></li>
+							</ul>
+						</div>
 
-					<div class="position">
-						<h3>DTN Agriculture API:</h3>
-						<p class="job-title">Web App Displaying Weather and Agricultural Data</p>
-						<p class="area-of-study">My Contribution: Calling several APIs through curl and AJAX for use in displaying agricultural news, weather forecasts including radar, and cash bids of crops and cattle.</p>
+						<div class="position">
+							<h3><a href="https://github.com/AlexRenner/DBCProject_tracker">DBC Project Tracker:</a></h3>
+							<p class="job-title">Web App for Organizing and Delegating Final Projects</p>
+							<p class="area-of-study">My Contribution: Back end logic for creating class names, students and projects and organizing them into teams.</p>
+							<ul>
+								<li><a href="https://github.com/AlexRenner/DBCProject_tracker/blob/master/app/controllers/teams_controller.rb">Teams Controller</a></li>
+							</ul>
+						</div>
+
+						<div class="position">
+							<h3>DTN Agriculture API:</h3>
+							<p class="job-title">Web App Displaying Weather and Agricultural Data</p>
+							<p class="area-of-study">My Contribution: Calling several APIs through curl and AJAX for use in displaying agricultural news, weather forecasts including radar, and cash bids of crops and cattle.</p>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<footer class="container-fluid background-pine">
+			<button onclick="topFunction()" id="myBtn" title="Go to top" widht="40px" height="40px"><i class="fas fa-angle-up" style="font-size:36px;"></i></button>
+
+			<footer class="container-fluid background-pine top-border">
 				<div class="container">
 					<div class="col-sm-12 center">
-						<p class="contact-info">arenner38@yahoo.com | <a href="https://www.linkedin.com/in/alexander-renner">LinkedIn</a> | <a href="https://github.com/AlexRenner">GitHub</a> | <a href="./portfolio.html">Design Portfolio</a></p>
+						<p class="contact-info">arenner38@yahoo.com | <a href="https://www.linkedin.com/in/alexander-renner" target="_blank">LinkedIn</a> | <a href="https://github.com/AlexRenner" target="_blank">GitHub</a><!--  | <a href="./portfolio.html">Design Portfolio</a> --></p>
 					</div>
 				</div>
 			</footer>
