@@ -74,6 +74,10 @@ a:hover {
 	color: white;
 }
 
+.margin-bottom25 {
+	margin-bottom: 25px;
+}
+
 .logo {
 	height: 80px;
 	width: auto;
