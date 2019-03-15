@@ -462,7 +462,6 @@ img.hover-shadow {
 		vertical-align: top;
 		position: fixed;
 		z-index: 1;
-		background-color: #81a5a0;
 		height: 50px;
 		width: 100%;
     box-shadow: 0px 5px 5px 0px #888888;
@@ -473,7 +472,7 @@ img.hover-shadow {
 		width: 30px;
 		height: 30px;
 		color: #d0eae6;
-		background-color: #81a5a0;
+		background-color: #4abdac;
 		border-radius: 3px;
 		border: solid 1px black;
 	}
@@ -495,7 +494,7 @@ img.hover-shadow {
 	.dropdown-content {
 	 	display: none;
 	 	position: absolute;
-	 	background-color: #81a5a0;
+	 	background-color: #4abdac;
 	 	min-width: 120px;
 	 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	  cursor: default;

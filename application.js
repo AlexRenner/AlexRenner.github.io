@@ -41,15 +41,15 @@ $(document).ready(function(){
 			$('.dropdown-content').css("display", "block");
 		};
 	});
-	// // Event listener for navigating via links in dropdown menu
-	// $(".link").on("click", function(){
-	// 	// Remove displayed content
-	// 	$(".content").addClass("hidden");
-	// 	// Display new content
-	// 	$("body").find("#" + $(this)[0].innerText).removeClass("hidden");
-	// 	// Hide menu
-	// 	$('.dropdown-content').css("display", "none");
-	// });
+	// Event listener for navigating via links in dropdown menu
+	$(".link").on("click", function(){
+		// Hide dropdown on navigation
+		if($('.dropdown-content:hidden').length == 0){
+			$('.dropdown-content').css("display", "none");
+		} else {
+			$('.dropdown-content').css("display", "block");
+		};
+	});
 });
 
 function animateMenuButton(bar) {
