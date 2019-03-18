@@ -415,7 +415,7 @@ img.hover-shadow {
 
 	header {
 		width: 100%;
-		height: 90px;
+		/*height: 90px;*/
 		border: none;
 		border-bottom: 3px solid gray;
 		border-radius: 0px;
@@ -618,4 +618,10 @@ i.skills-icon {
 #myBtn:hover {
   background-color: white;
   border: solid 1px black;
+}
+
+@media screen and (min-width: 1200px) {
+	header p.contact-info {
+		margin-top: 22px;
+	}
 }
